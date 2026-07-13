@@ -435,6 +435,7 @@
       border-radius: 2%;
       width: 600px;
       height: 400px;
+      object-fit: contain;
     }
     .image-square img {
       max-width: 100%;
@@ -447,6 +448,7 @@
       border-radius: 2%;
       width: 300px;
       height: 300px;
+      object-fit: contain;
     }
     .container {
       display: flex;

@@ -18,7 +18,7 @@
   <!-- ── LEFT ── -->
   <aside class="left">
     <div class="image-profile">
-      <img src="https://web-app-domain-997067877742-ap-southeast-1-an.s3.ap-southeast-1.amazonaws.com/profile4.png"><br><br>
+      <img src="asset/profile4.png"><br><br>
     </div>
     <div class="name-wrap">
       <span class="name" id="nameEl"></span>
@@ -28,8 +28,8 @@
     <p class="intro-text">
       Infrastructure Engineer<br>
       Bangkok, Thailand<br>
-      <a class="contact-link" href="asset/Resume-Eng-Sathaporn-Junla.pdf" target="_blank" rel="noreferrer">See my CV</a><br>
-      <a class="contact-link" href="mailto:sathapju@gmail.com"><svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>sathapju [at] gmail</a>
+      <a class="contact-link" href="asset/Resume-Eng-Sathaporn-Junla.pdf" target="_blank" rel="noreferrer">CV</a><br>
+      Email <a class="contact-link" href="mailto:sathapju@gmail.com">sathapju [at] gmail [dot] com</a>
     </p>
 
     <nav>
@@ -49,7 +49,7 @@
       <p class="section-label">Introduce</p>
       <div class="about-body">
         <p>
-          Hi, I'm Sathapon Junla, I have <strong class="exp-company">5 years</strong> of experience in <strong class="exp-company">IT infrastructure</strong>. I can manage <strong class="exp-company">VMs</strong>, Windows, and <strong class="exp-company">Linux servers</strong>, as well as <strong class="exp-company">networks</strong> including WLC, core switches, Access Points, and <strong class="exp-company">Firewalls</strong>. I also work with AWS cloud systems, handle asset inventories, renew MA and licenses, and prepare SOP documents for <strong class="exp-company">IT audits</strong>. 
+          Hi, I'm Sathapon Junla, I have <strong class="exp-company">5 years</strong> of experience in <strong class="exp-company">IT infrastructure</strong>. I can manage <strong class="exp-company">VM</strong>, Windows, and <strong class="exp-company">Linux servers</strong>, as well as <strong class="exp-company">networks</strong> including WLC, core switches, Access Points, and <strong class="exp-company">Firewalls</strong>. I also work with AWS cloud systems, handle asset inventories, renew MA and licenses, and prepare SOP documents for <strong class="exp-company">IT audits</strong>. 
         </p>
         <p>
           Proficient in managing <strong class="exp-company">AWS</strong> cloud environments, including <strong class="exp-company">IAM</strong> configuration, compute management, storage allocation, and implementing Auto Scaling and Load Balancing. Experienced in infrastructure automation using <strong class="exp-company">Terraform</strong> (IaC), working with <strong class="exp-company">Linux</strong> fundamentals, and managing containerized applications with <strong class="exp-company">Docker</strong>.
@@ -65,7 +65,7 @@
         <div class="exp-date">2023 — 2026<br>May&nbsp;&nbsp;&nbsp;&nbsp;Mar</div>
         <div>
           <div class="exp-title">Infrastructure Engineer | <span class="exp-company"><b>Olympus</b></span></div>
-          <div class="exp-desc"><b>Infrastructure & Cloud: </b>Managed APAC enterprise IT/network environments and successfully deployed a cloud-based web application on AWS EC2.</div>
+          <div class="exp-desc"><b>Infrastructure & Cloud: </b>Managed APAC enterprise IT/network environments and successfully deployed a cloud-based web application on AWS.</div>
           <div class="exp-desc"><b>Operations & Projects: </b>Coordinated regional IT projects with global teams/vendors and managed incidents/change requests via ServiceNow under strict ITIL/SLA targets.</div>
           <div class="exp-desc"><b>Security & Compliance: </b>Led IT audit readiness, enforced global security policies, developed SOPs, and served as the primary contact for internal auditors.</div>
           <div class="tags">
@@ -131,7 +131,7 @@
       <div class="ach-item" data-ach="LLM" tabindex="0" role="button" aria-haspopup="dialog">
         <div class="ach-year">2026 <span class="ach-expand">View details →</span></div>
         <div class="ach-title"><b>Local LLM prediction from smart farm dataset via AI Chat.</b> <!--| <span class="exp-company">Olympus</span>--></div>
-        <div class="ach-desc">This LLM project (IS) for Master Deegree in Cybercurity Major at KMUTNB.</div>
+        <div class="ach-desc">This LLM project (IS) for Master Degree in Cybercurity Major at KMUTNB.</div>
       </div>
 
       <div class="ach-item" data-ach="register" tabindex="0" role="button" aria-haspopup="dialog">
@@ -167,7 +167,8 @@
 <div class="modal-overlay" id="achModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
   <div class="modal-box">
     <div class="modal-close" id="modalClose" aria-label="Close">✕</div>
-    <div class="modal-image-wrap" id="modalImageWrap"></div>
+    <!--<div class="modal-image-wrap" id="modalImageWrap"></div>-->
+    <div id="modalImageWrap"></div>
     <div class="modal-body">
       <div class="modal-year" id="modalYear"></div>
       <div class="modal-title" id="modalTitle"></div>
@@ -223,6 +224,7 @@
       icon: 'cloud',
       tags: ['AWS', 'EC2', 'Load balance', 'Auto Scaling', 'VPC', 'RDS'],
       description: [
+        '<div class="image-achiev"><img src="asset/aws-implementation.png"></div>',
         '<span class="exp-company"><b>Compliance & Architecture Redesign:</b></span> Partnered with global legal and security teams to ensure compliance with ISO 27001 standards. Upgraded the initial standalone EC2 architecture (running Dockerized Nginx and MySQL) into a secure, resilient, and multi-node infrastructure.',
         '<span class="exp-company"><b>High Availability & Scalability:</b></span> Implemented an AWS Application Load Balancer (ALB) and Auto Scaling Group (ASG) deploying a minimum of two EC2 instances to distribute high external traffic. Configured ASG scaling policies triggered at 80% CPU utilization to handle sudden traffic spikes and automatically replace unhealthy instances.',
         '<span class="exp-company"><b>Data Modernization & Cost Management:</b></span> Decoupled the database by migrating local Dockerized MySQL to AWS RDS for enhanced data durability, backup, and restore capabilities. Managed the budget planning by analyzing and presenting the incremental cloud costs to executive leadership for financial approval.',
@@ -237,6 +239,7 @@
       icon: 'cloud',
       tags: ['SharePoint', 'Migration', 'Zero Downtime', 'Data Governance'],
       description: [
+        '<div class="image-achiev"><img src="asset/successmigration.png"></div>',
         'Led the end-to-end migration of legacy local Share Drive storage to Microsoft SharePoint for the APAC office, replacing an aging file server that had become a single point of failure and a growing security risk.',
         'Planned the migration in phases — mapping folder structures and access permissions, running a pilot with one department, then rolling out site-by-site — so that staff experienced zero operational downtime and no data loss throughout the cutover.',
         'Re-mapped legacy NTFS permissions to SharePoint site and library permissions, set up versioning and retention policies, and delivered short training sessions so teams could adopt the new workflow with minimal disruption.'
@@ -250,6 +253,7 @@
       icon: 'people',
       tags: ['HR System', 'Visitor System', 'Cloud', 'KIOSK', 'VoIP'],
       description: [
+        '<div class="image-achiev"><img src="asset/hr-operation.png"></div>',
         'Streamlined the internal HR operating system and meeting-room/resource booking system used across the APAC region, coordinating requirements between HR stakeholders and the global IT team.',
         'Ran a full-lifecycle hardware refresh in parallel — replacing aging servers and core network devices as requested by the APAC team — while keeping the systems the business depended on day-to-day online throughout the rollout.',
         'Validated the new environment through UAT with HR power-users before go-live, then handed over documentation and quick-reference guides so the system could be supported locally after the project closed.'
@@ -263,24 +267,30 @@
       icon: 'wifi',
       tags: ['Access Point', 'Network Design', 'WLC', 'SD-WAN', 'Cisco'],
       description: [
+        '<div class="image-achiev"><img src="asset/replacement-ap.png"></div>',
         'Led a network modernization project to replace outdated wireless Access Points across 3 major Hino sites, addressing recurring coverage gaps and connectivity drop-outs reported by end users.',
         'Surveyed each site to plan optimal AP placement and channel allocation, coordinated installation with local vendors and facilities teams, and migrated devices onto the new wireless LAN controller with minimal disruption to operations.',
         'Post-rollout monitoring showed significantly improved wireless stability and coverage across all three sites, reducing support tickets related to Wi-Fi connectivity.'
       ]
     },
     'LLM': {
-      year: 'Paper 01',
+      year: '2026',
       title: 'LLM prediction from smart farm dataset.',
       company: 'Master Degree',
-      image: "asset/LLM-AI-Chat.png", // e.g. "assets/access-point.jpg"
+      image: "asset/Coming-Soon.png", // e.g. "assets/access-point.jpg"
       icon: 'wifi',
       tags: ['LLM','AI'],
       description: [
-        'This LLM project (IS) for Master Deegree in Cybercurity Major at KMUTNB'
+        'This LLM project (IS) for Master Degree in Cybercurity Major at KMUTNB',
+        '<div class="image-achiev"><img src="asset/Coming-Soon.png"></div>',
+        '<strong>Bring Your Ideas to Life</strong> A great mockup is more than just a preview—it is the bridge between a raw concept and reality. By placing your designs into real-world contexts, mockups help eliminate guesswork, align your team’s vision, and tell a compelling story to stakeholders. See exactly how your branding, layouts, and products look before moving into production. Explore the future of your project today.',
+        '<div class="container"><div class="column left-column"><p>A great mockup is more than just a preview—it is the bridge between a raw concept and reality. By placing your designs into real-world contexts, mockups help eliminate guesswork, align your team’s vision, and tell a compelling story to stakeholders. See exactly how your branding, layouts, and products look before moving into production. Explore the future of your project today.</p></div><div class="column right-column"><p><div class="image-square"><img src="asset/Coming-Soon-1.png"></div></p></div></div>',
+        '<div class="container"><div class="column left-column-r"><p><div class="image-square"><img src="asset/Coming-Soon-1.png"></div></p></div><div class="column right-column-r"><p>A great mockup is more than just a preview—it is the bridge between a raw concept and reality. By placing your designs into real-world contexts, mockups help eliminate guesswork, align your team’s vision, and tell a compelling story to stakeholders. See exactly how your branding, layouts, and products look before moving into production. Explore the future of your project today.</p></div></div>',
+        'A great mockup is more than just a preview—it is the bridge between a raw concept and reality. By placing your designs into real-world contexts, mockups help eliminate guesswork, align your team’s vision, and tell a compelling story to stakeholders. See exactly how your branding, layouts, and products look before moving into production. Explore the future of your project today.'
       ]
     },
     'project02': {
-      year: 'Paper 02',
+      year: '2026',
       title: 'LLM prediction form smart farm dataset.',
       company: 'Master Degree',
       image: "null", // e.g. "assets/access-point.jpg"
@@ -315,9 +325,9 @@
     modalTitle.textContent = data.title;
     modalCompany.textContent = data.company;
 
-    modalImageWrap.innerHTML = data.image
-      ? `<img src="${data.image}" alt="${data.title}">`
-      : ICONS[data.icon];
+    //modalImageWrap.innerHTML = data.image
+      //? `<img src="${data.image}" alt="${data.title}">`
+      //: ICONS[data.icon];
 
     modalDesc.innerHTML = data.description.map(p => `<p>${p}</p>`).join('');
 

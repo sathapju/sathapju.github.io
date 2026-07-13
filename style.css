@@ -415,6 +415,14 @@
       .left { position: static; height: auto; width: 100%; padding: 60px 0 32px; }
       .right { padding: 0 0 60px; }
       .exp-item { grid-template-columns: 1fr; gap: 4px; }
+      .container {
+        flex-direction: column-reverse;
+        height: auto;
+        min-height: unset;
+      }
+      column {
+        width: 100%;
+      }
     }
     .image-profile img {
       position: relative;
@@ -453,6 +461,7 @@
     .container {
       display: flex;
       height: 350px;
+      height: auto;
     }
     .column {
       padding: 0px;
